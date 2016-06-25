@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_browsefreelancer"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Browse Freelancer" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Browse Projects" />
+    </group>
+
+    <item android:title="Projects">
+        <menu>
+            <item
+                android:id="@+id/nav_notificationsr"
+                android:icon="@drawable/ic_menu_share"
+                android:title="notif" />
+            <item
+                android:id="@+id/nav_postaproject"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Post a Project" />
+            <item
+                android:id="@+id/nav_myprojects"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Projects" />
+            <item
+                android:id="@+id/nav_browse"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Browse Freelancer" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Settings">
+            <menu>
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Send feedback" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="settings" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Signout" />
+            </menu>
+
+</item>
+    </group>
+</menu>

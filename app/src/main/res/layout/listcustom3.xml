@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/img_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            />
+
+
+
+    </TableRow>
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+    <TableRow>
+        <TextView
+
+            android:id="@+id/skills_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+
+            android:id="@+id/country_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_light"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </TableRow>
+</TableLayout>
