@@ -103,6 +103,11 @@ static String fragValue;
 
 
         }
+        else if (id == R.id.nav_postaproject) {
+            fragmentmanager.beginTransaction().replace(R.id.content_frame,new PostProject()).commit();
+
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

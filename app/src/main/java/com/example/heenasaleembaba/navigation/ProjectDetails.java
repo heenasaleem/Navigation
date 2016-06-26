@@ -38,11 +38,12 @@ public class ProjectDetails extends Fragment {
     View myview;
     ListView listView;
     public String TAG;
+    String valSelected;
 //    ArrayAdapter adapter;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         TAG = "STATUS";
-
+valSelected = MainActivity.fragValue;
         myview = inflater.inflate(R.layout.project_details, container, false);
         listView = (ListView) myview.findViewById(R.id.listProject_id);
 
@@ -155,7 +156,7 @@ public class ProjectDetails extends Fragment {
             }
         }
         GetDataJSON g = new GetDataJSON();
-        g.execute("ECommerce");
+        g.execute(valSelected);
 //    }
 
     }

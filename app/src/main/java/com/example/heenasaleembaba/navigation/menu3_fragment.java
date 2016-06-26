@@ -119,7 +119,11 @@ public class menu3_fragment extends Fragment {
                         R.drawable.ic_autorenew_black_24dp,
                         R.drawable.ic_face_black_24dp,
                         R.drawable.ic_menu_camera,
-                        R.drawable.ic_menu_gallery
+                        R.drawable.ic_menu_gallery,
+                        R.drawable.ic_add1,
+                        R.drawable.ic_android_black,
+                        R.drawable.ic_autorenew,
+                        R.drawable.ic_build_black
 
                 };
                 //ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, list);
@@ -130,7 +134,13 @@ public class menu3_fragment extends Fragment {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         //startActivity(new Intent(getActivity(),ProjectDetails.class));
                         FragmentManager fragmentmanager= getFragmentManager();
-                        MainActivity.fragValue = "website";
+                        MainActivity.fragValue = listView.getItemAtPosition(position).toString();
+                        Log.e("Value", listView.getItemAtPosition(position).toString());
+                        Bundle bundle=new Bundle();
+                        bundle.putString("item", listView.getItemAtPosition(position).toString());
+                        //set Fragmentclass Arguments
+                        ProjectDetails fragobj = new ProjectDetails();
+                        fragobj.setArguments(bundle);
                         fragmentmanager.beginTransaction().replace(R.id.content_frame,new ProjectDetails()).commit();
 
 

@@ -1,8 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Navigation</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+
+
+<string name="action_settings">Settings</string>
+<string name="lblAcc">Select the Type of Project</string>
+<string name="lblSubAcc">Select the subcategory</string>
+<string name="lbltech">Select the language/technology to b used</string>
+
+<string name="lbldet">please give us a little more info about your project</string>
+<string name="lblcurr">please select the budget</string>
+
+
+
+<string name="input_lable">input details about yourself and the project</string><string name="sub">POST THE PROJECT</string>
+
+
+<string-array name="tech_type">
+    <item>JAVA</item>
+    <item>C/C++</item>
+    <item>.NET</item>
+    <item>PHP</item>
+    <item>PYTHON</item>
+    <item>SQL</item>
+</string-array>
+<string-array name="curr_type">
+    <item>$10-30</item>
+    <item>$30-250</item>
+    <item>$250-750</item>
+    <item>$750-1500</item>
+    <item>$1500-3000</item>
+    <item>$3000-5000</item>
+
+</string-array>
+
+
+
 </resources>
+
