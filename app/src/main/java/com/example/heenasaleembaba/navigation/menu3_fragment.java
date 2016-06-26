@@ -135,12 +135,12 @@ public class menu3_fragment extends Fragment {
                         //startActivity(new Intent(getActivity(),ProjectDetails.class));
                         FragmentManager fragmentmanager= getFragmentManager();
                         MainActivity.fragValue = listView.getItemAtPosition(position).toString();
-                        Log.e("Value", listView.getItemAtPosition(position).toString());
-                        Bundle bundle=new Bundle();
-                        bundle.putString("item", listView.getItemAtPosition(position).toString());
-                        //set Fragmentclass Arguments
-                        ProjectDetails fragobj = new ProjectDetails();
-                        fragobj.setArguments(bundle);
+//                        Log.e("Value", listView.getItemAtPosition(position).toString());
+//                        Bundle bundle=new Bundle();
+//                        bundle.putString("item", listView.getItemAtPosition(position).toString());
+//                        //set Fragmentclass Arguments
+//                        ProjectDetails fragobj = new ProjectDetails();
+//                        fragobj.setArguments(bundle);
                         fragmentmanager.beginTransaction().replace(R.id.content_frame,new ProjectDetails()).commit();
 
 
